@@ -1,0 +1,16 @@
+ALgunos consejos, aunque es sobre todo para mejorar practicas de programacion:
+
+- Todos los datos que uitilizan deberian estar en una carpeta 'data'. Por ejemplo no encontre ni 'Vehículos_2013_a_2023.xlsx', ni 'Filter_Accidentes_UFL_Barrio_MallaVIal_Estrato_TableToExcel1.xlsx'.
+- Los requirements.txt son un poco problematicos, ya que no especifican la version de las librerias que se instalan. Por eso es mejor utilizar un gestor de entornos.
+- Utilicen algun gestor de entornos. Aqui por ejemplo utilice poetry que permite jugar con las versiones que satisfagan los requerimientos.
+- Traten de trabajar con archivos csv, son mas faciles de manipular que los xlsx.
+- No usen nombres de archivos con espacios, es mejor usar guiones bajos o guiones (al archivo 'atributos georeferenciados.xlsx' le he puesto un guion bajo).
+- Traten de escribir todos los paths en un archivo 'config.py' para que puedan importar/exportar mas facilmente.
+- Si en algun notebook, o archivo en general, no necesitan algunas librerias, no la importen (por ejemplo numpy no se usaba en un par que vi).
+- Muchos de esos archivos podrian ir en el mismo notebook. No es necesario tener tantos notebooks para un proceso en particular.
+
+python -m venv my_venv
+. my_venv/Scripts/activate
+pip install numpy
+pip install -r ./requirements.txt
+deactivate

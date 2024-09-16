@@ -1,0 +1,7 @@
+numpy
+pandas
+scikit-learn
+openpyxl
+missingno
+sweetviz
+pycaret

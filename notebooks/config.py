@@ -1,0 +1,146 @@
+# Paths de archivos
+BASE_DATOS_INICIAL = "../data/base_datos_inicial.xlsx"
+LISTA_UNICOS_RADICADOS_BUSES = "../data/lista_unicos_radicados_buses.xlsx"
+ADDITIONAL_ATRIBUTES = "../data/Filter_Accidentes_UFL_Barrio_MallaVIal_Estrato_TableToExcel1.xlsx"
+ATRIBUTOS_GEOREFERENCIADOS = "../data/atributos_georeferenciados.xlsx"
+CLEANED_DATA = "../data/cleaned_data.xlsx"
+CLEANED_DATA_NO_MISSING = "../data/cleaned_data_no_missing.xlsx"
+CLEANED_TRASNLATED_DATA = "../data/cleaned_translated_data.xlsx"
+TRANSLATED_DATA_REPORT = "../data/Translated_data_report.html"
+TRANSLATED_DATA_REPORT_BY_CATEGORY = "../data/Translated_data_report_by_categpry.html"
+UNIQUES_TRANSLATION = "../data/uniques_for_translation.xlsx"
+FINAL_DATASET = "../data/cleaned_translated_data.xlsx"
+
+MORAN_ANSELIN_DATA = "../../Bases de datos/Crashes_Spots_Join_HotSpot_Anselin_Barrio_CSV.csv"
+DATASET_WITH_SPATIAL_INFO = "../data/clean_for_data_spatial_analysis.xlsx"
+
+
+# Parámetros
+TYPE_BUSES = ["BUSETA", "BUS", "MICRO BUS", "BUS ARTICULADO", "MINI BUS"]
+VALUES_TO_REPLACE = [
+    "VOLQUETA",
+    "DESCONOCIDA",
+    "MOTOCARRO",
+    "TRACTOCAMION",
+    "MOTOCICLO",
+    "MOTONETA",
+    "DESCONOCIDO",
+    "TRACCION ANIMAL",
+    "AMBULANCIA",
+    "CAMION CARGA EXTENSA",
+    "MAQ. INDUSTRIAL",
+    "CAMION D.TROQUE",
+    "ABONADORA",
+    "CUATRIMOTO",
+    "CARRETILLA ELEVADORA",
+    "MONTACARGA",
+    "TRACTO-CAMION REMOLQUE",
+    "GRUA",
+    "MAQ. AGRICOLA",
+    "RETROEXCAVADORA",
+    "BULDOZER",
+    "REMOLQUE",
+    "MINICARGADOR",
+    "CARGADOR",
+    "APLANADORA",
+    "SEMIREMOLQUE",
+    "TRICICLO",
+    "COSECHADORA",
+    "ESCAVADORA",
+    "PAVIMENTADORA",
+    "AUTOHORMIGONERA",
+    "MAQUINA BARREDORA",
+    "TRACTOR",
+    "VOLQUETA D.TROQUE",
+    "CUADRICICLO",
+    "CICLOMOTO",
+    "FRESADORA",
+    "COMPACTADORA",
+    "CICLOMOTOR",
+    "MOTOTRICICLO",
+    "EXCAVADORA",
+    "CAMION GRUA",
+    "TRICIMOTO",
+    "BARREDORA",
+    "TRILLADORA",
+]
+
+COLUMNS_TO_TRANSLATE = [
+    "tipo_geoco",
+    "gravedad",
+    "diseno",
+    "areagralus",
+    "subcategor",
+    "clase_accidente",
+    "clase_vehiculo",
+    "tipo_servicio",
+    "sexo",
+    "dia_semana",
+]
+
+DICTIONARY_TRANSLATION = {
+    "malla_vial": "road_network",
+    "epm_sin_interior": "epm_without_interior",
+    "malla_vial_cruce_invertido": "inverted_road_network_crossing",
+    "no_ubicada": "not_located",
+    "epm_con_interior": "epm_with_interior",
+    "malla_vial_aproximada": "approximate_road_network",
+    "nomenclatura_con_interior": "nomenclature_with_interior",
+    "zona_rural": "rural_area",
+    "solo_danos": "material_damage_only",
+    "herido": "injured",
+    "muerto": "fatality",
+    "glorieta": "roundabout",
+    "tramo_de_via": "road_segment",
+    "interseccion": "intersection",
+    "lote_o_predio": "land",
+    "paso_elevado": "overpass",
+    "puente": "bridge",
+    "ciclo_ruta": "cycle_route",
+    "paso_inferior": "underpass",
+    "paso_a_nivel": "level_crossing",
+    "tunel": "tunnel",
+    "ponton": "pontoon",
+    "via_peatonal": "pedestrian_road",
+    "areas_y_corredores_de_alta_mixtura": "high_mix_use_areas_and_corridors",
+    "areas_y_corredores_de_media_mixtura": "medium_mix_use_areas_and_corridors",
+    "areas_de_baja_mixtura": "low_mix_use_areas",
+    "espacio_publico_proyectado": "projected_public_space",
+    "espacio_publico_existente": "existing_public_space",
+    "uso_dotacional": "endowment_use",
+    "centralidades_con_predominancia_economica": "centralities_with_economic_predominance",
+    "zonas_de_transicion_centralidades_dotacionales_aglomeraciones_comerciales_y_de_servicios_barriales": "transition_zones_centralities_endowment_areas_commercial_agglomerations_and_neighborhood_service_areas",
+    "areas_de_actividad_economica_en_trasformacion": "economically_transforming_areas",
+    "centralidades_y_corredores_con_alta_mixtura": "centralities_and_corridors_with_high_mix",
+    "areas_predominantemente_residenciales": "predominantly_residential_areas",
+    "zonas_verdes_publicas_sistema_de_movilidad": "public_green_areas_in_the_mobility_system",
+    "zonas_verdes_publicas_sistema_hidrografico": "public_green_areas_in_the_hydrographic_system",
+    "caida_ocupante": "occupant_fall",
+    "choque": "collision",
+    "atropello": "pedestrian_struck",
+    "volcamiento": "rollover",
+    "otro": "other",
+    "incendio": "fire",
+    "bus": "bus",
+    "automovil": "automobile",
+    "motocicleta": "motorcycle",
+    "otros": "other",
+    "camion": "truck",
+    "bicicleta": "bicycle",
+    "publico": "public",
+    "particular": "private",
+    "oficial": "official",
+    "desconocido": "unknown",
+    "diplomatico": "diplomatic",
+    "especial": "special",
+    "masculino": "male",
+    "femenino": "female",
+    "sin_inf": "without_information",
+    "jue": "thursday",
+    "mie": "wednesday",
+    "mar": "tuesday",
+    "sab": "saturday",
+    "vie": "friday",
+    "lun": "monday",
+    "dom": "sunday"
+}
