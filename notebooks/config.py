@@ -11,7 +11,8 @@ TRANSLATED_DATA_REPORT_BY_CATEGORY = "../data/Translated_data_report_by_categpry
 UNIQUES_TRANSLATION = "../data/uniques_for_translation.xlsx"
 FINAL_DATASET = "../data/cleaned_translated_data.xlsx"
 
-MORAN_ANSELIN_DATA = "../../Bases de datos/Crashes_Spots_Join_HotSpot_Anselin_Barrio_CSV.csv"
+#MORAN_ANSELIN_DATA = "../../Bases de datos/Crashes_Spots_Join_HotSpot_Anselin_Barrio_CSV.csv"
+MORAN_ANSELIN_DATA = "../data/Clean_Data_UniqueCase_Joined_Data.xlsx"
 DATASET_WITH_SPATIAL_INFO = "../data/clean_for_data_spatial_analysis.xlsx"
 
 
