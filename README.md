@@ -12,14 +12,12 @@ The dataset used in this project contains the following key information:
 - **Accident Date and Time**
 - **Accident Location**
 - **Type of Accident**
-- **Weather Conditions**
-- **Number of Injuries**
-- **Fatalities**
-- **Bus Involved (Type, Route, etc.)**
+- **Severity of the accident**
+- **Type of vehicle Involved**
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Contact
 
