@@ -1,26 +1,24 @@
-[project]
-name = "paper-transito"
+[tool.poetry]
+name = "buses_accidents_medellin"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Ana Jaramillo",email = "anmjaramillo@gmail.com"}
-]
+authors = ["Ana Jaramillo <anmjaramillo@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "numpy",
-    "pandas",
-    "openpyxl",
-    "missingno",
-    "setuptools",
-    "ipykernel",
-    "sweetviz",
-    "scikit-learn",
-    "pycaret",
-    "kaleido (==0.2.1)"
-]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+numpy = "^1.24"
+pandas = "^2.1"
+openpyxl = "^3.1.5"
+missingno = "^0.5.2"
+setuptools = "^78.1.0"
+ipykernel = "^6.29.5"
+sweetviz = "^2.3.1"
+scikit-learn = "^1.3.2"
+pycaret = {extras = ["analysis"], version = "3.3.2"}
+kaleido = "0.2.1"
 
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
